@@ -1,4 +1,4 @@
-from sklearn.feature_extraction.tests import TfidVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
 def train_model(X_train, y_train):
