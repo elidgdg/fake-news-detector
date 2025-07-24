@@ -18,3 +18,14 @@ def clean_text(text):
     words = [word for word in words if word not in STOPWORDS]
 
     return " ".join(words)
+
+def preprocess(df):
+    # Clean 'text' column
+    df["clean_text"] = df["text"].apply(clean_text)
+
+    # Split features and labels
+    X = df["clean_text"]
+    y = df["label"]
+
+    # Split into training and test sets
+    return train_test_split(X, y, test_size=0.2, random_state=42)
