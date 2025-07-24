@@ -11,3 +11,5 @@ def load_data(fake_path="data/Fake.csv", true_path="data/True.csv"):
     # Combine and shuffle
     df = pd.concat([df_fake, df_true], ignore_index=True)
     df = df.sample(frac=1, random_state=42).reset_index(drop=True)
+
+    return df
