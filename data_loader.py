@@ -2,7 +2,7 @@ import pandas as pd
 
 def load_data(fake_path="data/Fake.csv", true_path="data/True.csv"):
     df_fake = pd.read_csv(fake_path)
-    df_true = pd.read_csv(real_path)
+    df_true = pd.read_csv(true_path)
 
     # Label: 0 = fake, 1 = real
     df_fake["label"] = 0
