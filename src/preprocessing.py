@@ -21,7 +21,7 @@ def clean_text(text):
 
 def preprocess(df):
     # Clean 'text' column
-    df["clean_text"] = df["text"].apply(clean_text)
+    df["clean_text"] = df["title"].apply(clean_text)
 
     # Split features and labels
     X = df["clean_text"]
