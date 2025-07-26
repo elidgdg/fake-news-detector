@@ -1,4 +1,4 @@
-# fake-news-detector
+#Fake News Detector
 
 A machine learning web app that classifies news as real or fake based on headlines
 
