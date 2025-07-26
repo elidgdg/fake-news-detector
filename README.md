@@ -17,8 +17,6 @@ A logistic regression model is trained on the Kaggle Fake/Real News dataset (`ti
 ### 4. Web App
 A Flask app allows users to enter a headline and get a prediction.
 
----
-
 ## Web App Interface
 ![Web UI](screenshots/web-ui.png)
 
